@@ -1,0 +1,91 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947} = {C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}
+		{C8A3858B-A885-3125-9954-BCED7D2C9524} = {C8A3858B-A885-3125-9954-BCED7D2C9524}
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786} = {9F871DF5-2FD8-36A1-91ED-36E73381C786}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INSTALL", "INSTALL.vcxproj", "{EFE43F41-4B5C-38EC-8A28-CB68A1FD3A10}"
+	ProjectSection(ProjectDependencies) = postProject
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9} = {203FEF51-4071-3FBC-BD54-BBF4A8E129B9}
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947} = {C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PACKAGE", "PACKAGE.vcxproj", "{0D47F442-1C13-3016-B306-C83AA30B3F96}"
+	ProjectSection(ProjectDependencies) = postProject
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9} = {203FEF51-4071-3FBC-BD54-BBF4A8E129B9}
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947} = {C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cudpp", "src\cudpp\cudpp.vcxproj", "{C8A3858B-A885-3125-9954-BCED7D2C9524}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947} = {C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cudpp_hash", "src\cudpp_hash\cudpp_hash.vcxproj", "{9F871DF5-2FD8-36A1-91ED-36E73381C786}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947} = {C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}
+		{C8A3858B-A885-3125-9954-BCED7D2C9524} = {C8A3858B-A885-3125-9954-BCED7D2C9524}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}.Debug|Win32.Build.0 = Debug|Win32
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}.Release|Win32.ActiveCfg = Release|Win32
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}.Release|Win32.Build.0 = Release|Win32
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{203FEF51-4071-3FBC-BD54-BBF4A8E129B9}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{EFE43F41-4B5C-38EC-8A28-CB68A1FD3A10}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EFE43F41-4B5C-38EC-8A28-CB68A1FD3A10}.Release|Win32.ActiveCfg = Release|Win32
+		{EFE43F41-4B5C-38EC-8A28-CB68A1FD3A10}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{EFE43F41-4B5C-38EC-8A28-CB68A1FD3A10}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{0D47F442-1C13-3016-B306-C83AA30B3F96}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0D47F442-1C13-3016-B306-C83AA30B3F96}.Release|Win32.ActiveCfg = Release|Win32
+		{0D47F442-1C13-3016-B306-C83AA30B3F96}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{0D47F442-1C13-3016-B306-C83AA30B3F96}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}.Debug|Win32.Build.0 = Debug|Win32
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}.Release|Win32.ActiveCfg = Release|Win32
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}.Release|Win32.Build.0 = Release|Win32
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{C8A3858B-A885-3125-9954-BCED7D2C9524}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8A3858B-A885-3125-9954-BCED7D2C9524}.Debug|Win32.Build.0 = Debug|Win32
+		{C8A3858B-A885-3125-9954-BCED7D2C9524}.Release|Win32.ActiveCfg = Release|Win32
+		{C8A3858B-A885-3125-9954-BCED7D2C9524}.Release|Win32.Build.0 = Release|Win32
+		{C8A3858B-A885-3125-9954-BCED7D2C9524}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{C8A3858B-A885-3125-9954-BCED7D2C9524}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{C8A3858B-A885-3125-9954-BCED7D2C9524}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{C8A3858B-A885-3125-9954-BCED7D2C9524}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786}.Debug|Win32.Build.0 = Debug|Win32
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786}.Release|Win32.ActiveCfg = Release|Win32
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786}.Release|Win32.Build.0 = Release|Win32
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{9F871DF5-2FD8-36A1-91ED-36E73381C786}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41BF8E2C-1C4B-362C-AB94-CEE3A8996250}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

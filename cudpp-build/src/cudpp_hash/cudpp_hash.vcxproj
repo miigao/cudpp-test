@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F871DF5-2FD8-36A1-91ED-36E73381C786}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cudpp_hash</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cudpp_hash.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cudpp_hash32d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cudpp_hash.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cudpp_hash32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cudpp_hash.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cudpp_hash32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cudpp_hash.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cudpp_hash32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\..\..\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_debugging.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_debugging.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_debugging.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_debugging.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/debugging.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_debugging.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_debugging.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_debugging.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_debugging.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_debugging.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/debugging.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_debugging.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_debugging.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_debugging.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_debugging.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_debugging.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/debugging.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_debugging.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_debugging.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_debugging.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_debugging.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_debugging.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/debugging.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_debugging.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_compacting.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_compacting.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_compacting.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_compacting.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_compacting.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_compacting.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_compacting.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_compacting.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_compacting.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_compacting.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_compacting.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_compacting.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_compacting.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_multivalue.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_multivalue.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_multivalue.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_multivalue.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_multivalue.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_multivalue.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_multivalue.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_multivalue.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_multivalue.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_multivalue.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_multivalue.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_multivalue.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_multivalue.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_table.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_table.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_table.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_table.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_table.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_table.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_table.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_table.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_table.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_table.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_table.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_table.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_table.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_table.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_table.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_table.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_table.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_table.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_table.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_table.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_table.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_table.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_table.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_table.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_functions.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_functions.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_functions.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_functions.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_functions.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_functions.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_functions.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_functions.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_functions.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_functions.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_functions.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_functions.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_functions.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//$(Configuration)/cudpp_hash_generated_hash_functions.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//cudpp_hash_generated_hash_functions.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/hash_functions.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_functions.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_functions.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gaomi/Desktop/cudpp-master -BC:/Users/gaomi/Desktop/cudpp-test --check-stamp-file C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\run_nvcc.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gaomi/Desktop/cudpp-master -BC:/Users/gaomi/Desktop/cudpp-test --check-stamp-file C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\run_nvcc.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gaomi/Desktop/cudpp-master -BC:/Users/gaomi/Desktop/cudpp-test --check-stamp-file C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\run_nvcc.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gaomi/Desktop/cudpp-master -BC:/Users/gaomi/Desktop/cudpp-test --check-stamp-file C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp_hash/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\run_nvcc.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_debugging.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_compacting.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_functions.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_multivalue.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\cudpp_hash_generated_hash_table.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_debugging.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_compacting.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_multivalue.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_table.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_functions.cu.obj" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\cudpp_hash.cpp" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.cpp" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.cpp" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.cpp" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cpp" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\mt19937ar.cpp" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\definitions.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_functions.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\mt19937ar.h" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cuh" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\include\cudpp_hash.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\gaomi\Desktop\cudpp-test\ZERO_CHECK.vcxproj">
+      <Project>{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\cudpp.vcxproj">
+      <Project>{C8A3858B-A885-3125-9954-BCED7D2C9524}</Project>
+      <Name>cudpp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

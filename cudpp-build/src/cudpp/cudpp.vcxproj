@@ -1,0 +1,1541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C8A3858B-A885-3125-9954-BCED7D2C9524}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cudpp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cudpp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cudpp32d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cudpp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cudpp32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cudpp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cudpp32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cudpp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cudpp32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\gaomi\Desktop\cudpp-master\include;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\moderngpu\include;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\..\..\ext\cub;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\reduce_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_reduce_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/reduce_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\reduce_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_reduce_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_reduce_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/reduce_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\reduce_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_reduce_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_reduce_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/reduce_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\reduce_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_reduce_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_reduce_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_reduce_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/reduce_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\reduce_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_reduce_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compact_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compact_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/compact_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compact_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compact_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compact_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/compact_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compact_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compact_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compact_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/compact_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compact_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compact_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compact_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compact_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/compact_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compact_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compact_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compress_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compress_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/compress_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compress_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compress_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compress_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/compress_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compress_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compress_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compress_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/compress_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compress_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compress_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_compress_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compress_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/compress_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compress_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compress_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\listrank_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_listrank_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/listrank_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\listrank_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_listrank_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_listrank_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/listrank_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\listrank_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_listrank_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_listrank_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/listrank_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\listrank_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_listrank_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_listrank_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_listrank_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/listrank_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\listrank_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_listrank_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\sa_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_sa_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/sa_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\sa_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_sa_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_sa_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/sa_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\sa_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_sa_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_sa_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/sa_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\sa_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_sa_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_sa_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_sa_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/sa_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\sa_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_sa_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\mergesort_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_mergesort_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/mergesort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\mergesort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_mergesort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_mergesort_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/mergesort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\mergesort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_mergesort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_mergesort_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/mergesort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\mergesort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_mergesort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_mergesort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_mergesort_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/mergesort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\mergesort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_mergesort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\multisplit_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_multisplit_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/multisplit_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\multisplit_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_multisplit_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_multisplit_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/multisplit_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\multisplit_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_multisplit_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_multisplit_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/multisplit_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\multisplit_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_multisplit_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_multisplit_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_multisplit_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/multisplit_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\multisplit_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_multisplit_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\scan_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_scan_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/scan_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\scan_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_scan_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_scan_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/scan_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\scan_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_scan_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_scan_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/scan_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\scan_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_scan_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_scan_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_scan_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/scan_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\scan_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_scan_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\segmented_scan_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_segmented_scan_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/segmented_scan_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\segmented_scan_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_segmented_scan_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_segmented_scan_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/segmented_scan_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\segmented_scan_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_segmented_scan_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_segmented_scan_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/segmented_scan_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\segmented_scan_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_segmented_scan_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_segmented_scan_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_segmented_scan_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/segmented_scan_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\segmented_scan_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_segmented_scan_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\spmvmult_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_spmvmult_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/spmvmult_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\spmvmult_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_spmvmult_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_spmvmult_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/spmvmult_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\spmvmult_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_spmvmult_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_spmvmult_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/spmvmult_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\spmvmult_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_spmvmult_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_spmvmult_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_spmvmult_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/spmvmult_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\spmvmult_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_spmvmult_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\stringsort_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_stringsort_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/stringsort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\stringsort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_stringsort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_stringsort_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/stringsort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\stringsort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_stringsort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_stringsort_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/stringsort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\stringsort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_stringsort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_stringsort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_stringsort_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/stringsort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\stringsort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_stringsort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\radixsort_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_radixsort_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/radixsort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\radixsort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_radixsort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_radixsort_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/radixsort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\radixsort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_radixsort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_radixsort_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/radixsort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\radixsort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_radixsort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_radixsort_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_radixsort_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/radixsort_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\radixsort_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_radixsort_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\rand_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_rand_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/rand_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\rand_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_rand_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_rand_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/rand_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\rand_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_rand_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_rand_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/rand_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\rand_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_rand_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_rand_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_rand_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/rand_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\rand_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_rand_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\tridiagonal_app.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_tridiagonal_app.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/tridiagonal_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\tridiagonal_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_tridiagonal_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_tridiagonal_app.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/tridiagonal_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\tridiagonal_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_tridiagonal_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_tridiagonal_app.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/tridiagonal_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\tridiagonal_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_tridiagonal_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/$(Configuration)/cudpp_generated_tridiagonal_app.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_tridiagonal_app.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/app/tridiagonal_app.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\tridiagonal_app.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_tridiagonal_app.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\src\mgpucontext.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/cudpp_generated_mgpucontext.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/ext/moderngpu/src/mgpucontext.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.Debug.cmake;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\src\mgpucontext.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\$(Configuration)\cudpp_generated_mgpucontext.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/cudpp_generated_mgpucontext.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/ext/moderngpu/src/mgpucontext.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.Release.cmake;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\src\mgpucontext.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\$(Configuration)\cudpp_generated_mgpucontext.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/cudpp_generated_mgpucontext.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/ext/moderngpu/src/mgpucontext.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.MinSizeRel.cmake;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\src\mgpucontext.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\$(Configuration)\cudpp_generated_mgpucontext.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building NVCC (Device) object src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)Tools/MSVC/$(VCToolsVersion)/bin/Host$(Platform)/$(PlatformTarget)" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj -D generated_cubin_file:STRING=C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/$(Configuration)/cudpp_generated_mgpucontext.cu.obj.cubin.txt -P C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/cudpp_generated_mgpucontext.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/ext/moderngpu/src/mgpucontext.cu;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.RelWithDebInfo.cmake;C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\src\mgpucontext.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\$(Configuration)\cudpp_generated_mgpucontext.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gaomi/Desktop/cudpp-master -BC:/Users/gaomi/Desktop/cudpp-test --check-stamp-file C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\run_nvcc.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gaomi/Desktop/cudpp-master -BC:/Users/gaomi/Desktop/cudpp-test --check-stamp-file C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\run_nvcc.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gaomi/Desktop/cudpp-master -BC:/Users/gaomi/Desktop/cudpp-test --check-stamp-file C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\run_nvcc.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/gaomi/Desktop/cudpp-master -BC:/Users/gaomi/Desktop/cudpp-test --check-stamp-file C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\run_nvcc.cmake;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\cudpp_generated_mgpucontext.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compact_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_compress_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_listrank_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_mergesort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_multisplit_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_radixsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_rand_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_reduce_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_sa_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_segmented_scan_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_spmvmult_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_stringsort_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.cmake.pre-gen;C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\cudpp_generated_tridiagonal_app.cu.obj.depend;C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_reduce_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compact_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compress_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_listrank_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_sa_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_mergesort_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_multisplit_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_scan_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_segmented_scan_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_spmvmult_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_stringsort_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_radixsort_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_rand_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_tridiagonal_app.cu.obj" />
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\$(Configuration)\cudpp_generated_mgpucontext.cu.obj" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp.cpp" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_plan.cpp" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_manager.cpp" />
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\src\mgpuutil.cpp" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_manager.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_plan.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cuda_util.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_util.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_globals.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_compact.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_compress.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_listrank.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_sa.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_mergesort.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_multisplit.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_radixsort.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_rand.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_reduce.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_stringsort.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_scan.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_segscan.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_spmvmult.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\sharedmem.h" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\compress_cta.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\mergesort_cta.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\radixsort_cta.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\rand_cta.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\scan_cta.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\segmented_scan_cta.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\stringsort_cta.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\compact_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\compress_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\listrank_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\sa_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\mergesort_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\multisplit_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\radixsort_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\rand_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\reduce_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\segmented_scan_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\spmvmult_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\stringsort_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\vector_kernel.cuh" />
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\tridiagonal_kernel.cuh" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\include\cudpp.h" />
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\include\cudpp_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\gaomi\Desktop\cudpp-test\ZERO_CHECK.vcxproj">
+      <Project>{C4E4BB3E-5DB5-3747-9C00-B2F6587B2947}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

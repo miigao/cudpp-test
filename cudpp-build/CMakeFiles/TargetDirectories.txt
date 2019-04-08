@@ -1,0 +1,10 @@
+C:/Users/gaomi/Desktop/cudpp-test/CMakeFiles/PACKAGE.dir
+C:/Users/gaomi/Desktop/cudpp-test/CMakeFiles/INSTALL.dir
+C:/Users/gaomi/Desktop/cudpp-test/CMakeFiles/ALL_BUILD.dir
+C:/Users/gaomi/Desktop/cudpp-test/CMakeFiles/ZERO_CHECK.dir
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/PACKAGE.dir
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/INSTALL.dir
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/PACKAGE.dir
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/INSTALL.dir

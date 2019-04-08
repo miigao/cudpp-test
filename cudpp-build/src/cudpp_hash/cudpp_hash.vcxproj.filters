@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\cudpp_hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\mt19937ar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\mt19937ar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\include\cudpp_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\debugging.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_compacting.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_multivalue.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_functions.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp_hash\hash_table.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_debugging.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_compacting.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_multivalue.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_table.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp_hash\CMakeFiles\cudpp_hash.dir\$(Configuration)\cudpp_hash_generated_hash_functions.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUDA Header Files">
+      <UniqueIdentifier>{F5A067DA-F6D7-301A-AC2E-0EC48471A3E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA Source Files">
+      <UniqueIdentifier>{A921C525-E439-387F-95C0-6F11E665048A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9C002AD3-00B9-328E-9BBC-0A415E576865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{9FFEED4B-C2FA-3FFF-A6C4-C1E49FAB4A1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E027C408-B803-34F4-AF8A-C73C02BF640D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

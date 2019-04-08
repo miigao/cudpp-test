@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-test\CMakeFiles\48f3244a62f6c89ed06cc7852d7a61b4\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AB9AE4FF-4ABF-3665-BE01-D74B28EA69DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_plan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\src\mgpuutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_plan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cuda_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_compact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_compress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_listrank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_sa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_mergesort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_multisplit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_radixsort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_reduce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_stringsort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_scan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_segscan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cudpp_spmvmult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\sharedmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\include\cudpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gaomi\Desktop\cudpp-master\include\cudpp_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\reduce_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compact_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\compress_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\listrank_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\sa_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\mergesort_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\multisplit_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\scan_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\segmented_scan_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\spmvmult_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\stringsort_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\radixsort_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\rand_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\app\tridiagonal_app.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\ext\moderngpu\src\mgpucontext.cu">
+      <Filter>CUDA Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\compress_cta.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\mergesort_cta.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\radixsort_cta.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\rand_cta.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\scan_cta.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\segmented_scan_cta.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\cta\stringsort_cta.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\compact_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\compress_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\listrank_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\sa_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\mergesort_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\multisplit_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\radixsort_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\rand_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\reduce_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\segmented_scan_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\spmvmult_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\stringsort_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\vector_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+    <None Include="C:\Users\gaomi\Desktop\cudpp-master\src\cudpp\kernel\tridiagonal_kernel.cuh">
+      <Filter>CUDA Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_reduce_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compact_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_compress_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_listrank_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_sa_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_mergesort_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_multisplit_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_scan_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_segmented_scan_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_spmvmult_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_stringsort_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_radixsort_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_rand_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\app\$(Configuration)\cudpp_generated_tridiagonal_app.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\gaomi\Desktop\cudpp-test\src\cudpp\CMakeFiles\cudpp.dir\__\__\ext\moderngpu\src\$(Configuration)\cudpp_generated_mgpucontext.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUDA Header Files">
+      <UniqueIdentifier>{F5A067DA-F6D7-301A-AC2E-0EC48471A3E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA Source Files">
+      <UniqueIdentifier>{A921C525-E439-387F-95C0-6F11E665048A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9C002AD3-00B9-328E-9BBC-0A415E576865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{9FFEED4B-C2FA-3FFF-A6C4-C1E49FAB4A1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E027C408-B803-34F4-AF8A-C73C02BF640D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

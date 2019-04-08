@@ -1,0 +1,8 @@
+﻿  Building NVCC (Device) object src/cudpp_hash/CMakeFiles/cudpp_hash.dir/Debug/cudpp_hash_generated_debugging.cu.obj
+  nvcc fatal   : Unsupported gpu architecture 'compute_20'
+  CMake Error at cudpp_hash_generated_debugging.cu.obj.Debug.cmake:219 (message):
+    Error generating
+    C:/Users/gaomi/Desktop/cudpp-test/src/cudpp_hash/CMakeFiles/cudpp_hash.dir//Debug/cudpp_hash_generated_debugging.cu.obj
+  
+  
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(171,5): error MSB6006: “cmd.exe”已退出，代码为 1。

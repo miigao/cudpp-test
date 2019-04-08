@@ -1,0 +1,33 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/gaomi/Desktop/cudpp-master/src/cudpp/CMakeLists.txt
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/cudpp_generated_mgpucontext.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/__/__/ext/moderngpu/src/cudpp_generated_mgpucontext.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compact_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compact_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compress_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_compress_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_listrank_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_listrank_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_mergesort_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_mergesort_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_multisplit_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_multisplit_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_radixsort_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_radixsort_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_rand_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_rand_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_reduce_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_reduce_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_sa_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_sa_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_scan_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_scan_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_segmented_scan_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_segmented_scan_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_spmvmult_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_spmvmult_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_stringsort_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_stringsort_app.cu.obj.depend
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_tridiagonal_app.cu.obj.cmake.pre-gen
+C:/Users/gaomi/Desktop/cudpp-test/src/cudpp/CMakeFiles/cudpp.dir/app/cudpp_generated_tridiagonal_app.cu.obj.depend
